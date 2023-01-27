@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import dummyContacts from "../dummyData";
-import { ContactList } from "./";
-
+import ContactList from "../ContactList";
+console.log(ContactList);
 const Main = () => {
-  const [contacts, setContacts] = useState(dummyContacts);
+  const [contacts, setContacts] = React.useState(dummyContacts);
 
   return (
     <div id="main">
